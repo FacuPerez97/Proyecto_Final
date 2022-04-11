@@ -6,7 +6,7 @@ from django.template import loader
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the Hospital General index.")
+    return render(request, "HospítalGeneral/inicio.html")
 
 def doctor(request):
     return render(request, "HospítalGeneral/Doctor.html")
